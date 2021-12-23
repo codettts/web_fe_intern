@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB RESPONSIVE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <!-- <script src="./raw-knodchart/raw"></script> -->
+</head>
+
+<body>
+    <div class="row">
+        <div class="wrapper">
+            <div class="left active">
+                <div class="header">
+                    <div class="left-header">
+                        <div class="logo-header">
+                            <img src="./image/logo-top.png" alt="logo-top">
+                        </div>
+                    </div>
+                    <div class="right-header">
+                        <h4 class="text-header">ĐÀO TẠO </h4>
+                        <h6>HẢI QUAN VIỆT NAM </h6>
+                    </div>
+                </div>
+                <div class="body">
+                    <ul class="menu-body">
+                        <li class="menu-item active">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                                <span class="menu-link">TRANG CHỦ</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span class="menu-link">PHÒNG HỌC TRỰC TUYẾN</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span class="menu-link">KỲ THI</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <i class="fas fa-chart-pie"></i>
+                                <span class="menu-link">BẢNG XẾP HẠNG</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <i class="fas fa-search"></i>
+                                <span class="menu-link">KHẢO SÁT</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <b></b>
+                            <b></b>
+                            <a href="library.html">
+                                <i class="far fa-file-alt"></i>
+                                <span class="menu-link">THƯ VIỆN</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <i class="far fa-comments"></i>
+                                <span class="menu-link">DIỄN ĐÀN</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <p>©2021 Copyright Thanh Cong A Chau All Rights Reserved - Ulearn:3.0.0 Built with support of
+                        USAID</p>
+                </div>
+            </div>
+            <div class="right active">
+                <div class="right-header">
+                    <div class="toggle active" onClick="toggleMenu();">
+                        <a href="#"><i class="fas fa-bars"></i></i></a>
+                    </div>
+                    <div class="topic">
+                        <div class="heading-top" style="color: #666666;font-weight: 600;">TRANG ĐÀO TẠO</div>
+                        <div class="heading-bottom" style="font-style: italic; color: #666666;">Trang chủ / Trang đào
+                            tạo
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input class="in-search" type="search" placeholder="      Tìm kiếm....">
+                        <button class="btn-search"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="icon">
+                        <div class="language">
+                            <div class="box-circle">
+                                <div class="dot">
+                                    <img src="./image/Flag.png" alt="" class="p1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification">
+                            <div class="box-circle">
+                                <div class="dot-1">
+                                    <i class=" ic-bel fas fa-bell" style="color: black;"></i>
+                                    <div class="noti"><span class="num"
+                                            style="margin: 7px 3px; font-size: 16px;">56</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="box-circle">
+                                <div class="avt">
+                                    <img src="./image/daidien.png" alt="" class="f-img">
+                                    <div class="f-name">
+                                        <span style="margin-left: 0.5625em;">Trần Đức Hiếu</span>
+                                        <p class="position-user">Học viên</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="right-tab">
+                    <div id="tabs" class="tabs">
+                        <ul class="nav-tabs">
+                            <li class="active"><a class="active" href="#menu_1">DANH SÁCH KHÓA HỌC</a></li>
+                            <li><a href="#menu_2">KHÓA HỌC CỦA TÔI</a></li>
+                            <li><a href="#menu_3">LỘ TRÌNH</a></li>
+                        </ul>
+                        <div class="content-right-menu1">
+                            <div class="card-info">
+                                <div class="box-header">
+                                    <span class="box-header-number">04</span>
+                                    <hr style="height:54px;color:#ebebeb;background-color:#ebebeb">
+                                    <div class="border-right"></div>
+                                    <div class="box-header-content">
+                                        <span>KỸ NĂNG <br><a href="#">Chi tiết>></a></span>
+
+                                    </div>
+                                </div>
+                                <div class="box-body">
+                                    <span class="box-body-number">22</span>
+                                    <hr style="height:54px;color:#ebebeb;background-color:#ebebeb">
+                                    <div class="box-body-content">
+                                        <span>CHỨNG CHỈ <br><a href="#">Chi tiết>></a></span>
+
+                                    </div>
+                                </div>
+                                <div class="knod-chart">
+                                    <div class="knod-chart1">
+                                        <input type="text" value="66" data-width="70" data-height="70"
+                                            data-fgColor="#a90000" class="dial">
+                                        <span style="color: #747474;"><br>Khóa học</span>
+                                    </div>
+                                    <div class="knod-chart2">
+                                        <input type="text" value="31" data-width="70" data-height="70"
+                                            data-fgColor="#0054a6" class="dial">
+                                        <span style="color: #747474;"><br>Lộ trình</span>
+                                    </div>
+                                    <div class="knod-chart3">
+                                        <input type="text" value="7" data-width="70" data-height="70"
+                                            data-fgColor="#22ac93" class="dial">
+                                        <span style="color: #747474;"><br>Kỳ thi</span>
+                                    </div>
+                                </div>
+                                <div class="khoahoc">
+                                    <div class="khoahoc-left">
+                                        <span style="color: #0054a6; font-weight: 700;">KHÓA HỌC</span>
+                                        <span><br>Tổng thời gian học:</span>
+                                    </div>
+                                    <div class="khoahoc-right">
+                                        <span>21</span>
+                                        <span><br>10:21:30</span>
+                                    </div>
+                                </div>
+                                <!-- <hr  class="hr1" width="30%" size="5px" align="center" color="red" /> -->
+                                <div class="lotrinh">
+                                    <div class="lotrinh-left">
+                                        <span style="color: #0054a6; font-weight: 700;">LỘ TRÌNH ĐÀO TẠO</span>
+                                        <span><br>Tổng thời gian học:</span>
+                                    </div>
+                                    <div class="lotrinh-right">
+                                        <span>22</span>
+                                        <span><br>10:21:30</span>
+                                    </div>
+                                </div>
+                                <div class="kythi">
+                                    <div class="kythi-left">
+                                        <span style="color: #0054a6; font-weight: 700;">KỲ THI</span>
+                                        <span><br>Tổng thời gian thi:</span>
+                                    </div>
+                                    <div class="kythi-right">
+                                        <span>10</span>
+                                        <span><br>10:21:30</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div id="menu_1" class="tab-content-item menu-1">
+                                <div class="content-left-menu1">
+                                    <div class="item item1 item-left">
+                                        <span class="item-number ">86</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                    <div class="item item2 item-mid">
+                                        <span class="item-number">86</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                    <div class="item item3 item-right">
+                                        <span class="item-number">86</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                    <div class="item item4 item-left">
+                                        <span class="item-number">10</span>
+                                        <span class="item-text">KIỂM TRA SAU THÔNG QUAN</span>
+                                    </div>
+                                    <div class="item item5 item-mid">
+                                        <span class="item-number">10</span>
+                                        <span class="item-text">KIỂM TRA SAU THÔNG QUAN</span>
+                                    </div>
+                                    <div class="item item6 item-right">
+                                        <span class="item-number">10</span>
+                                        <span class="item-text">KIỂM TRA SAU THÔNG QUAN</span>
+                                    </div>
+                                    <div class="item item1 item-left">
+                                        <span class="item-number ">82</span>
+                                        <span class="item-text">GIÁM SÁT QUẢN LÝ</span>
+                                    </div>
+                                    <div class="item item2 item-mid">
+                                        <span class="item-number">82</span>
+                                        <span class="item-text">GIÁM SÁT QUẢN LÝ</span>
+                                    </div>
+                                    <div class="item item3 item-right">
+                                        <span class="item-number">82</span>
+                                        <span class="item-text">GIÁM SÁT QUẢN LÝ</span>
+                                    </div>
+                                    <div class="item item4 item-left">
+                                        <span class="item-number">13</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                    <div class="item item5 item-mid">
+                                        <span class="item-number">13</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                    <div class="item item6 item-right">
+                                        <span class="item-number">13</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                    <div class="item item1 item-left">
+                                        <span class="item-number">86</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                    <div class="item item2 item-mid">
+                                        <span class="item-number">86</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                    <div class="item item3 item-right">
+                                        <span class="item-number">86</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                    <div class="item item4 item-left">
+                                        <span class="item-number">10</span>
+                                        <span class="item-text">KIỂM TRA SAU THÔNG QUAN</span>
+                                    </div>
+                                    <div class="item item5 item-mid">
+                                        <span class="item-number">10</span>
+                                        <span class="item-text">KIỂM TRA SAU THÔNG QUAN</span>
+                                    </div>
+                                    <div class="item item6 item-right">
+                                        <span class="item-number">10</span>
+                                        <span class="item-text">KIỂM TRA SAU THÔNG QUAN</span>
+                                    </div>
+                                    <div class="item item1 item-left">
+                                        <span class="item-number">82</span>
+                                        <span class="item-text">GIÁM SÁT QUẢN LÝ</span>
+                                    </div>
+                                    <div class="item item2 item-mid">
+                                        <span class="item-number">82</span>
+                                        <span class="item-text">GIÁM SÁT QUẢN LÝ</span>
+                                    </div>
+                                    <div class="item item3 item-right">
+                                        <span class="item-number">82</span>
+                                        <span class="item-text">GIÁM SÁT QUẢN LÝ</span>
+                                    </div>
+                                    <div class="item item4 item-left">
+                                        <span class="item-number">13</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                    <div class="item item5 item-mid">
+                                        <span class="item-number">13</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                    <div class="item item6 item-right">
+                                        <span class="item-number">13</span>
+                                        <span class="item-text">PHÁP CHẾ</span>
+                                    </div>
+                                </div>
+                                <!-- <div class="content-right-menu1">
+                                    <div class="card-info">
+                                        <div class="box-header">
+                                            <span class="box-header-number">04</span>
+                                            <hr style="height:54px;color:gray;background-color:gray">
+                                            <div class="border-right"></div>
+                                            <div class="box-header-content">
+                                                <span>KỸ NĂNG <br><a href="#">Chi tiết>></a></span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="box-body">
+                                            <span class="box-body-number">22</span>
+                                            <hr style="height:54px;color:gray;background-color:gray">
+                                            <div class="box-body-content">
+                                                <span>CHỨNG CHỈ <br><a href="#">Chi tiết>></a></span>
+                        
+                                            </div>
+                                        </div>
+                                        <div class="knod-chart">
+                                            <div class="knod-chart1">
+                                                <input type="text" value="75" class="dial">
+                                            </div>
+                                        </div>
+                                        <div class="khoahoc">
+                                            <div class="khoahoc-left">
+                                                <span style="color: #0054a6; font-weight: 700;">KHÓA HỌC</span>
+                                                <span><br>Tổng thời gian học:</span>
+                                            </div>
+                                            <div class="khoahoc-right">
+                                                <span>21</span>
+                                                <span><br>10:21:30</span>
+                                            </div>
+                                        </div>
+                                        <!-- <hr  class="hr1" width="30%" size="5px" align="center" color="red" /> -->
+                                <!-- <div class="lotrinh">
+                                            <div class="lotrinh-left">
+                                                <span style="color: #0054a6; font-weight: 700;">LỘ TRÌNH ĐÀO TẠO</span>
+                                                <span><br>Tổng thời gian học:</span>
+                                            </div>
+                                            <div class="lotrinh-right">
+                                                <span>22</span>
+                                                <span><br>10:21:30</span>
+                                            </div>
+                                        </div>
+                                        <div class="kythi">
+                                            <div class="kythi-left">
+                                                <span style="color: #0054a6; font-weight: 700;">KỲ THI</span>
+                                                <span><br>Tổng thời gian thi:</span>
+                                            </div>
+                                            <div class="kythi-right">
+                                                <span>10</span>
+                                                <span><br>10:21:30</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div id="menu_2" class="tab-content-item">
+                                <div class="content-left-menu2">
+                                    <div class="content-cardBox">
+                                        <div class="cards">
+                                            <div>
+                                                <div class="iconBox">
+                                                    <ul>
+                                                        <li class="b1"><i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="numbers">
+                                                    <i class="fas fa-star"></i>
+                                                    4.5
+                                                </div>
+                                                <div class="cardName">Tổng quan về Thuế xuất nhập khẩu</div>
+                                                <p>18/2/2021 - admin 02</p>
+                                                <p><a href="">18 bai hoc</a> - 2 luot xem</p>
+                                                <div class="tientrinh">
+                                                    <progress max="100" value="24" id="tientrinh"></progress>
+                                                    <p>Đã hoàn thành</p>
+                                                    <span>24%</span>
+                                                </div>
+                                                <div class="thoiluong">
+                                                    <h6>Thời lượng:</h6>
+                                                    <p>10:21:30</p>
+                                                </div>
+                                                <div class="total">
+                                                    <h6>Tổng thời gian học:</h6>
+                                                    <p>10:21:30</p>
+                                                </div>
+                                                <div class="solanhoc">
+                                                    <h6>Số lần học:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="tungay">
+                                                    <h6>Từ ngày:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="denngay">
+                                                    <h6>Đến ngày:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="btn-enjoy">
+                                                    <button type="button" class="button button1"><a
+                                                            href="course_1.html">Tham gia</a></button>
+                                                </div>
+                                            </div>
+                                            <div class="card-headers border-0">
+                                                <div class="action-dropdown">
+                                                    <div class="drop">
+                                                        <!-- <div class="btn-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+                                                  </svg>
+                                                </div> -->
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards">
+                                            <div>
+                                                <div class="iconBox">
+                                                    <ul>
+                                                        <li class="b2"><i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="numbers">
+                                                    <i class="fas fa-star"></i>
+                                                    4.5
+                                                </div>
+                                                <div class="cardName">Tổng quan về thuế xuất nhập khẩu</div>
+                                                <p>18/2/2021 - admin 02</p>
+                                                <p><a href="">18 bai hoc</a> - 2 luot xem</p>
+                                                <div class="tientrinh">
+                                                    <progress max="100" value="24" id="tientrinh"></progress>
+                                                    <p>Đã hoàn thành</p>
+                                                    <span>24%</span>
+                                                </div>
+                                                <div class="thoiluong">
+                                                    <h6>Thời lượng:</h6>
+                                                    <p>10:21:30</p>
+                                                </div>
+                                                <div class="total">
+                                                    <h6>Tổng thời gian học:</h6>
+                                                    <p>10:21:30</p>
+                                                </div>
+                                                <div class="solanhoc">
+                                                    <h6>Số lần học:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="tungay">
+                                                    <h6>Từ ngày:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="denngay">
+                                                    <h6>Đến ngày:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="btn-enjoy">
+                                                    <button type="button" class="button button1"><a
+                                                            href="course_2.html">Tham gia</a></button>
+                                                </div>
+                                            </div>
+                                            <div class="card-headers border-0">
+                                                <div class="action-dropdown">
+                                                    <div class="drop">
+                                                        <!-- <div class="btn-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+                                                  </svg>
+                                                </div> -->
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards">
+                                            <div>
+                                                <div class="iconBox">
+                                                    <ul>
+                                                        <li class="b3"><i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="numbers">
+                                                    <i class="fas fa-star"></i>
+                                                    4.5
+                                                </div>
+                                                <div class="cardName">Tổng quan về thuế xuất nhập khẩu</div>
+                                                <p>18/2/2021 - admin 02</p>
+                                                <p><a href="">18 bai hoc</a> - 2 luot xem</p>
+                                                <div class="tientrinh">
+                                                    <progress max="100" value="24" id="tientrinh"></progress>
+                                                    <p>Đã hoàn thành</p>
+                                                    <span>24%</span>
+                                                </div>
+                                                <div class="thoiluong">
+                                                    <h6>Thời lượng:</h6>
+                                                    <p>10:21:30</p>
+                                                </div>
+                                                <div class="total">
+                                                    <h6>Tổng thời gian học:</h6>
+                                                    <p>10:21:30</p>
+                                                </div>
+                                                <div class="solanhoc">
+                                                    <h6>Số lần học:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="tungay">
+                                                    <h6>Từ ngày:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="denngay">
+                                                    <h6>Đến ngày:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="btn-enjoy">
+                                                    <button type="button" class="button button1"><a
+                                                            href="course_3.html">Tham gia</a></button>
+                                                </div>
+                                            </div>
+                                            <div class="card-headers border-0">
+                                                <div class="action-dropdown">
+                                                    <div class="drop">
+                                                        <!-- <div class="btn-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+                                                  </svg>
+                                                </div> -->
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="paginations">
+                                        <li class="page-items previous-pages disable">
+                                            <a class="page-links" href="#"><i class="fas fa-angle-double-left"></i>
+                                                Trước</a>
+                                        </li>
+                                        <li class="page-contents">
+                                            <a class="active" href="">1</a>
+                                            <a class="" href="">2</a>
+                                            <a class="" href="">3</a>
+                                            <a class="" href="">4</a>
+                                        </li>
+                                        <li class="page-items next-pages">
+                                            <a class="page-links" href="#">Tiếp <i
+                                                    class="fas fa-angle-double-right"></i></a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="content-right-menu2 menu-2"></div>
+                            </div>
+                            <div id="menu_3" class="tab-content-item menu-3">
+                                <div class="content-left-menu3">
+                                    <div class="content-cardBox">
+                                        <div class="cards col-12">
+                                            <div>
+                                                <div class="iconBox">
+                                                    <ul>
+                                                        <li class="b1"><i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="finish1">
+                                                    <p style="color: white;">Đã hoàn thành</p>
+                                                </div>
+                                                <div class="cardName">Tổng quan về Thuế xuất nhập khẩu</div>
+                                                <p>18/2/2021 - admin 02</p>
+                                                <p><a href="">18 bai hoc</a> - 2 luot xem</p>
+                                                <div class="tientrinh">
+                                                    <progress max="100" value="24" id="tientrinh"></progress>
+                                                    <p>Đã hoàn thành</p>
+                                                    <span>24%</span>
+                                                </div>
+                                                <div class="thoiluong">
+                                                    <h6>Thời gian tham gia:</h6>
+                                                    <p>10:21:30</p>
+                                                </div>
+                                                <div class="solanhoc">
+                                                    <h6>Khởi tạo:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="btn-detail">
+                                                    <button type="button" class="buttons button2">Chi tiết</button>
+                                                </div>
+                                            </div>
+                                            <div class="card-headers border-0">
+                                                <div class="action-dropdown">
+                                                    <div class="drop">
+                                                        <!-- <div class="btn-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+                                                  </svg>
+                                                </div> -->
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards col-12">
+                                            <div>
+                                                <div class="iconBox">
+                                                    <ul>
+                                                        <li class="b2"><i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="finish2">
+                                                    <p style="color: white;">Chưa hoàn thành</p>
+                                                </div>
+                                                <div class="cardName">Tổng quan về thuế xuất nhập khẩu</div>
+                                                <p>18/2/2021 - admin 02</p>
+                                                <p><a href="">18 bai hoc</a> - 2 luot xem</p>
+                                                <div class="tientrinh">
+                                                    <progress max="100" value="24" id="tientrinh"></progress>
+                                                    <p>Đã hoàn thành</p>
+                                                    <span>24%</span>
+                                                </div>
+                                                <div class="thoiluong">
+                                                    <h6>Thời gian tham gia:</h6>
+                                                    <p>10:21:30</p>
+                                                </div>
+
+                                                <div class="solanhoc">
+                                                    <h6>Khởi tạo:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="btn-detail">
+                                                    <button type="button" class="buttons button2">Chi tiết</button>
+                                                </div>
+                                            </div>
+                                            <div class="card-headers border-0">
+                                                <div class="action-dropdown">
+                                                    <div class="drop">
+                                                        <!-- <div class="btn-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+                                                  </svg>
+                                                </div> -->
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards col-12">
+                                            <div>
+                                                <div class="iconBox">
+                                                    <ul>
+                                                        <li class="b3"><i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="finish3">
+                                                    <p style="color: white;">Đã hoàn thành</p>
+                                                </div>
+                                                <div class="cardName">Tổng quan về thuế xuất nhập khẩu</div>
+                                                <p>18/2/2021 - admin 02</p>
+                                                <p><a href="">18 bai hoc</a> - 2 luot xem</p>
+                                                <div class="tientrinh">
+                                                    <progress max="100" value="24" id="tientrinh"></progress>
+                                                    <p>Đã hoàn thành</p>
+                                                    <span>24%</span>
+                                                </div>
+                                                <div class="thoiluong">
+                                                    <h6>Thời gian tham gia:</h6>
+                                                    <p>10:21:30</p>
+                                                </div>
+                                                <div class="solanhoc">
+                                                    <h6>Khởi tạo:</h6>
+                                                    <p>21/2/2021</p>
+                                                </div>
+                                                <div class="btn-detail">
+                                                    <button type="button" class="buttons button2">Chi tiết</button>
+                                                </div>
+                                            </div>
+                                            <div class="card-headers border-0">
+                                                <div class="action-dropdown">
+                                                    <div class="drop">
+                                                        <!-- <div class="btn-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+                                                    <circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+                                                  </svg>
+                                                </div> -->
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="paginations">
+                                        <li class="page-items previous-pages disable">
+                                            <a class="page-links" href="#"><i class="fas fa-angle-double-left"></i>
+                                                Trước</a>
+                                        </li>
+                                        <li class="page-contents">
+                                            <a class="active" href="">1</a>
+                                            <a class="" href="">2</a>
+                                            <a class="" href="">3</a>
+                                            <a class="" href="">4</a>
+                                        </li>
+                                        <li class="page-items next-pages">
+                                            <a class="page-links" href="#">Tiếp <i
+                                                    class="fas fa-angle-double-right"></i></a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //add active class in selected list item
+        let list = document.querySelectorAll('.menu-item');
+        for (let i = 0; i < list.length; i++) {
+            list[i].onclick = function () {
+                let j = 0;
+                while (j < list.length) {
+                    list[j++].className = 'menu-item';
+
+                }
+                list[i].className = 'menu-item active';
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+<script>
+    function toggleMenu() {
+        let toggle = document.querySelector('.toggle');
+        let left = document.querySelector('.left');
+        let right = document.querySelector('.right');
+        toggle.classList.toggle('active');
+        left.classList.toggle('active')
+        right.classList.toggle('active')
+    }
+</script>
+<script>
+    let list = document.querySelectorAll(".menu-item");
+    for (let i = 0; i < list.length; i++) {
+        list[i].onclick = function () {
+            let j = 0;
+            while (j < list.length) {
+                list[j++].className = 'menu-item';
+            }
+            list[i].className = 'menu-item active';
+        }
+
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        //an noi dung
+        $('.tab-content-item').hide(); //an noi dung
+        $('.tab-content-item:first-child').fadeIn(); //hien thi noi dung item con
+        $('.nav-tabs li').click(function () {
+            $('.nav-tabs li').removeClass('active');
+            //active nav tabs
+            $(this).addClass('active');
+            //show tab-content
+            let id_tab_content = $(this).children('a').attr('href');
+            //alert(id_tab_content);
+            $('.tab-content-item').hide(); //an noi dung
+            $(id_tab_content).fadeIn();
+            return false;
+        })
+        $('.nav-tabs li a').click(function () {
+            $('.nav-tabs li a').removeClass('active');
+            //active nav tabs
+            $(this).addClass('active');
+        })
+    })
+</script>
+<script>
+    $(function () {
+        $(".dial").knob();
+    });
+</script>
+
+</html>

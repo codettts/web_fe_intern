@@ -143,10 +143,10 @@ body {
  font-size: 13px;
 }
 
-.copyright {
- margin-top: 10px;
+.copyright p{
+ margin-top: 20px;
  color: rgb(230, 224, 224);
- font-size: 0.9em;
+ font-size: 0.7em;
  text-align: start;
 }
 
@@ -158,7 +158,9 @@ body {
  line-height: 50px;
  text-align: center;
 }
-
+.navigation ul li a .icon .fa-search {
+ transform: rotate(90deg);
+}
 .navigation ul li a .icon .fa {
  color: #fff;
  font-size: 20px;
@@ -271,7 +273,7 @@ h3 {
 }
 
 .toggle::before {
- content: '\f0c9';
+ content: '\f036';
  font-family: fontAwesome;
  position: absolute;
  width: 100%;
@@ -328,13 +330,17 @@ h3 {
  padding: 5px 20px;
  outline: none;
  border: none;
+ background: rgb(233, 229, 229);
 }
 
 .search label .fa {
  position: absolute;
  right: 15px;
  top: 12px;
+ font-size: 17px;
  cursor: pointer;
+ color: #bd0f0f;
+ transform: rotate(90deg);
 }
 
 /* user-img */
@@ -363,6 +369,7 @@ h3 {
  font-size: 20px;
  transition: all 0.5s;
  text-align: center;
+ background: #fff;
 }
 
 .notifi span {
@@ -510,17 +517,20 @@ h3 {
 
 .topnav .search-s button {
 float: right;
-margin: 5px 16px;
-background: rgb(41, 61, 241);
-width: 120px;
-height: 30px;
-
+margin-right: 16px;
+background: #0054a6;
+ width: 120px;
+ height: 40px;
 border: none;
 cursor: pointer;
 border-radius: 40px;
 color: #fff;
 }
-
+.topnav .search-s button .fa{
+ margin-right: 10px;
+ transform: rotate(90deg);
+ font-size: 15px;
+}
 .topnav .search-s label input {
  outline: none;
 }
@@ -532,6 +542,7 @@ color: #fff;
  width: 100%;
  padding: 20px;
  display: grid;
+ align-items: center;
  margin: 20px auto;
  grid-template-columns: repeat(5, 1fr);
  grid-gap: 20px;
@@ -541,7 +552,7 @@ color: #fff;
 .cardBox .card {
  position: relative;
  background-color: #fff;
- padding: 20px;
+ padding: 10px;
  display: flex;
  justify-content: space-between;
  cursor: pointer;
@@ -564,13 +575,11 @@ color: #fff;
 
 .cardBox .card .cardName {
  color: #0c79e7;
- margin-top: 20px;
+ margin-top: 15px;
  font-size: 0.9em;
- font-weight: 800;
+ font-weight: 700;
  text-align: center;
- font-family: 'Times New Roman', Times, serif;
 }
-
 .price {
  text-align: center;
  bottom: 10px;
@@ -582,7 +591,7 @@ color: #fff;
 
 .price .buy {
  border-radius: 50px;
- margin: 10px auto;
+ margin: 5px auto;
  width: 130px;
  height: 35px;
  border: solid;
@@ -615,7 +624,7 @@ a {
 }
 
 h6 {
- margin: 30px auto;
+ margin: 20px auto;
  font-size: 10px;
  text-align: center;
 }

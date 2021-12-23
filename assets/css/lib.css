@@ -79,7 +79,9 @@ body {
  height: 50px;
  margin: 10px 0px;
 }
-
+.navigation ul li a .icon .fa-search{
+ transform: rotate(90deg);
+}
 .navigation ul li:hover .icon .fa {
  color: #bd0f0f;
 }
@@ -144,9 +146,9 @@ body {
 }
 
 .copyright {
- margin-top: 10px;
+ margin-top: 20px;
  color: rgb(230, 224, 224);
- font-size: 0.9em;
+ font-size: 0.7em;
  text-align: start;
 }
 
@@ -332,6 +334,7 @@ h3 {
  padding: 5px 20px;
  outline: none;
  border: none;
+ background: rgb(233, 229, 229);
 }
 
 .search label .fa {
@@ -339,6 +342,8 @@ h3 {
  right: 15px;
  top: 12px;
  cursor: pointer;
+ color: #bd0f0f;
+ transform: rotate(90deg);
 }
 
 /* user-img */
@@ -419,6 +424,9 @@ h3 {
  float: left;
  overflow: hidden;
  border-right: 1px solid rgb(236, 230, 230);
+}
+.drop .fas {
+ color: #b1adad;
 }
 
 .dropdown .dropbtn {
@@ -514,17 +522,20 @@ h3 {
 
 .topnav .search-s button {
  float: right;
- margin: 5px 16px;
- background: rgb(41, 61, 241);
+ margin-right: 16px;
+ background: #0054a6;
  width: 120px;
- height: 30px;
-
+ height: 40px;
  border: none;
  cursor: pointer;
  border-radius: 40px;
  color: #fff;
 }
-
+.topnav .search-s button .fa{
+ margin-right: 10px;
+ transform: rotate(90deg);
+ font-size: 16px;
+}
 .topnav .search-s label input {
  outline: none;
 }
@@ -583,7 +594,7 @@ h3 {
  margin-top: 10px;
  font-size: 0.7rem;
  padding: 0 8px;
- color: #ddd;
+ color: #b9b8b8;
  justify-content: space-between;
 }
 .card-right{
@@ -592,7 +603,7 @@ h3 {
  margin-top: 5px;
  font-size: 0.7rem;
  padding: 0 8px;
- color: #ddd;
+ color: #b9b8b8;
  justify-content: space-between;
 }
 .card-left .fas {

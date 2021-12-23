@@ -8,7 +8,6 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-  ;
 }
 
 body {
@@ -21,7 +20,7 @@ body {
   width: 100%;
 
 }
-
+/* naviagtion */
 .navigation {
   position: fixed;
   width: 300px;
@@ -137,15 +136,10 @@ body {
   text-decoration: none;
   color: #fff;
 }
-
-.list {
-  font-size: 13px;
-}
-
-.copyright {
-  margin-top: 10px;
+.copyright p{
+  margin-top: 20px;
   color: rgb(230, 224, 224);
-  font-size: 0.6em;
+  font-size: 0.7em;
   text-align: start;
 }
 
@@ -157,7 +151,9 @@ body {
   line-height: 50px;
   text-align: center;
 }
-
+.navigation ul li a .icon .fa-search{
+  transform: rotate(90deg);
+}
 .navigation ul li a .icon .fa {
   color: #fff;
   font-size: 20px;
@@ -186,6 +182,12 @@ body {
   line-height: 45px;
   white-space: nowrap;
 }
+.navigation ul li img {
+  width: 60px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 10px;
+}
 
 h2 {
   margin-top: 10px;
@@ -213,13 +215,7 @@ h3 {
   float: left;
   color: #726d6d;
 }
-
-.navigation ul li img {
-  width: 60px;
-  height: auto;
-  margin-top: 20px;
-  margin-left: 10px;
-}
+/* main */
 .main{
  position: absolute;
  width: calc(100% - 300px);
@@ -314,6 +310,7 @@ h3 {
  padding: 5px 20px;
  outline: none;
  border: none;
+ background: rgb(233, 229, 229);
 }
 .search label .fa{
  position: absolute;
@@ -321,6 +318,7 @@ h3 {
  top: 12px;
  color: #c92525;
  cursor: pointer;
+ transform: rotate(90deg);
 }
 /* user-img */
 .user{
@@ -351,8 +349,8 @@ h3 {
   position: absolute;
   font-size: 0.625rem;
   border-radius: 50% !important;
-  right: 12rem;
-  top: 0.5rem;
+  right: 11.7rem;
+  top: 0.7rem;
   font-weight: normal;
   height: 25px;
   width: 25px;
@@ -473,60 +471,71 @@ h3 {
 
 .topnav .search-s button {
  float: right;
- margin: 5px 16px;
- background: rgb(41, 61, 241);
+ margin-right: 16px;
+ background: #0054a6;
  width: 120px;
- height: 30px;
+ height: 40px;
  text-align: center;
  border: none;
  cursor: pointer;
  border-radius: 40px;
  color: #fff;
 }
+.topnav .search-s button .fa{
+  margin-right: 10px;
+  transform: rotate(90deg);
+  font-size: 15px;
+}
 .topnav .search-s label input{
   outline: none;
 }
 
 /* card-box */
-.cardBox{
- position: relative;
- width: 100%;
- padding: 20px;
- display: grid;
- margin: 20px auto;
- grid-template-columns: repeat(5,1fr);
- grid-gap: 20px;
- border-radius: 20px;
+.cardBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  margin: 15px auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  border-radius: 20px;
 }
-.cardBox .card{
+
+.cardBox .card {
   position: relative;
   background-color: #fff;
-  padding: 15px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
   border-radius: 20px;
 }
-.cardBox .card .numbers{
- position: relative;
- font-size: 0.7em;
- font-weight: 500;
- width: 40px;
- height: auto;
- margin: -8px auto;
- text-align: center;
- border-radius: 20px;
- background: rgb(230, 26, 26);
- color: #fff;
+
+.cardBox .card .numbers {
+  position: relative;
+  font-size: 0.7em;
+  font-weight: 500;
+  width: 40px;
+  height: auto;
+  margin: -8px auto;
+  text-align: center;
+  border-radius: 20px;
+  background: rgb(230, 26, 26);
+  color: #fff;
 
 }
-.cardBox .card .cardName{
+
+.cardBox .card .cardName {
   color: #0c79e7;
- margin-top: 20px;
- font-size: 0.9em;
- font-weight: 800;
- text-align: center;
- font-family: 'Times New Roman', Times, serif;
+  margin-top: 20px;
+  font-size: 0.9em;
+  font-weight: 660;
+  text-align: center;
+  font-family: "Segoe UI",
+  "Open Sans",
+  "Helvetica Neue",
+  sans-serif;
 }
 .price{
   text-align: center;
@@ -611,7 +620,7 @@ li{
 /* pagination */
 .pagination {
   text-align: center;
-  margin: -40px 30px 8px;
+  margin: -20px 30px 8px;
   user-select: none;
 }
 

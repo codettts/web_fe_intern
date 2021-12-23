@@ -74,6 +74,9 @@ body {
   height: 50px;
   margin: 10px 0px;
 }
+.navigation ul li a .icon .fa-search{
+  transform: rotate(90deg);
+}
 .navigation ul li:hover .icon{
  color: #bd0f0f;
 }
@@ -135,10 +138,10 @@ body {
  font-size: 13px;
 }
 
-.copyright {
- margin-top: 10px;
+.copyright p{
+ margin-top: 20px;
  color: rgb(230, 224, 224);
- font-size: 0.9em;
+ font-size: 0.7em;
  text-align: start;
 }
 
@@ -311,6 +314,7 @@ h3{
  padding: 5px 20px;
  outline: none;
  border: none;
+ background: rgb(233, 229, 229);
 }
 
 .search label .fa {
@@ -318,6 +322,8 @@ h3{
  right: 15px;
  top: 12px;
  cursor: pointer;
+ color: #bd0f0f;
+ transform: rotate(90deg);
 }
 
 /* user-img */
@@ -353,8 +359,8 @@ h3{
  position: absolute;
  font-size: 0.625rem;
  border-radius: 50% !important;
- right: 11.8rem;
- top: 0.9rem;
+ right: 11.6rem;
+ top: 1rem;
  font-weight: normal;
  height: 25px;
  width: 25px;
@@ -365,7 +371,6 @@ h3{
  color: #fff;
  box-shadow: -1px 5px 5px rgb(253, 182, 182);
 }
-
 /* styling navlist */
 #navlist {
  background-color: #0074D9;
